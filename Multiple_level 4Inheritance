@@ -1,0 +1,11 @@
+class University:
+    def teach(self):
+        print("The university teaches students.")
+
+class Department(University):
+    def research(self):
+        print("The department conducts research.")
+
+class ComputerScience(Department):
+    def code(self):
+        print("The computer science department writes code.")
