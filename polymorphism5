@@ -1,0 +1,21 @@
+
+
+def has_name(cls):
+    cls.name = "Animal"
+    return cls
+
+@has_name
+class Dog:
+    def bark(self):
+        print("Woof!")
+
+@has_**name**
+class Cat:
+    def meow(self):
+        print("Meow!")
+
+dog = Dog() 
+cat = Cat()
+
+print(dog.name)
+print(cat.name)
