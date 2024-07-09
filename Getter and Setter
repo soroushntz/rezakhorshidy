@@ -1,0 +1,23 @@
+
+
+
+class ConditionalClass:
+    def init(self, condition):
+        self.condition = condition
+
+    def define_attributes(self):
+        if self.condition == 'positive':
+            setattr(self, 'attr1', 'Positive attribute')
+            setattr(self, 'attr2', 10)
+        elif self.condition == 'negative':
+            setattr(self, 'attr1', 'Negative attribute')
+            setattr(self, 'attr2', -10)
+        else:
+            setattr(self, 'attr1', 'Neutral attribute')
+            setattr(self, 'attr2', 0)
+
+    def getattr(self, name):
+        if name.startswith('attr'):
+            return f"Default value for {name}"
+        raise AttributeError(f"'ConditionalClass' object has no attribute '{name}'")
+     
