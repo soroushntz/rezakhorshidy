@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPEX8uTgPIC9qMLUXnChhUB",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rezakhorshidy/barname nevisi/blob/main/Abstract%20Class%20rozhan%20Untitl5.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from abc import ABC, abstractmethod\n",
+        "\n",
+        "class Vehicle(ABC):\n",
+        "    def __init__(self, make, model):\n",
+        "        self._make = make\n",
+        "        self._model = model\n",
+        "\n",
+        "    @property\n",
+        "    def make(self):\n",
+        "        return self._make\n",
+        "\n",
+        "    @make.setter\n",
+        "    def make(self, value):\n",
+        "        self._make = value\n",
+        "\n",
+        "    @property\n",
+        "    def model(self):\n",
+        "        return self._model\n",
+        "\n",
+        "    @model.setter\n",
+        "    def model(self, value):\n",
+        "        self._model = value\n",
+        "\n",
+        "    @abstractmethod\n",
+        "    def drive(self):\n",
+        "        pass\n",
+        "\n",
+        "class Car(Vehicle):\n",
+        "    def drive(self):\n",
+        "        return \"Vroom!\"\n",
+        "\n",
+        "class Motorcycle(Vehicle):\n",
+        "    def drive(self):\n",
+        "        return \"Rumble!\""
+      ],
+      "metadata": {
+        "id": "ldY1xvcH7ArK"
+      },
+      "execution_count": 7,
+      "outputs": []
+    }
+  ]
+}
