@@ -1,0 +1,15 @@
+
+class Animal:
+    def sound(self):
+        print("The animal makes a sound")
+
+# Parent class
+class Mammal(Animal):
+    def eat(self):
+        print("The mammal eats")
+
+# Child class
+class Dog(Mammal):
+    def sound(self):
+        print("The dog barks")
+
