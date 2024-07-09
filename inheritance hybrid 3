@@ -1,0 +1,12 @@
+
+class Flyer:
+    def fly(self):
+        print("The flyer flies")
+
+class Walker:
+    def walk(self):
+        print("The walker walks")
+
+class Bird(Flyer, Walker):
+    def chirp(self):
+        print("The bird chirps")
