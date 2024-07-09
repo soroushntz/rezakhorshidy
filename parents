@@ -1,0 +1,7 @@
+class ChildClass(ParentClass):
+    def __init__(self, child_attr, parent_attr):
+        super().__init__(parent_attr) 
+        self.child_attr = child_attr
+
+    def some_method(self):
+        super().some_method() 
