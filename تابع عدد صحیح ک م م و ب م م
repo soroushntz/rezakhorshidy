@@ -1,0 +1,13 @@
+#تابعی بنویسید که عدد صحیح n را از ورودی بگیرد آنگاه ب م م و ک م م را به خروجی ارسال کنه
+
+def calculate_means(n):
+    if not isinstance(n, int) or n <= 0:
+        raise ValueError("Input must be a positive integer")
+
+    bmm = sum(i for i in range(1, n+1)) /
+    cmm = [None]
+    current_sum = 0
+    for i in range(1, n+1):
+        current_sum += i
+        cmm.append(current_sum / i)
+    return bmm, cmm[-1]
