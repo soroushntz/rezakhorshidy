@@ -1,0 +1,11 @@
+class Animal:
+    def sound(self):
+        print("The animal makes a sound.")
+
+class Mammal(Animal):
+    def feed_young(self):
+        print("The mammal feeds its young.")
+
+class Dog(Mammal):
+    def bark(self):
+        print("The dog barks.")
