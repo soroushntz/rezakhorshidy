@@ -1,0 +1,9 @@
+
+
+class b:
+    def setvar(self,a,b):
+        self.x=a
+        c=a*b
+        selfie.y=c
+t=b()
+     
