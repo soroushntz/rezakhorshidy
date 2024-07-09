@@ -1,0 +1,17 @@
+class Parent1:
+    def __init__(self):
+        self.name = "Parent1"
+
+    def method(self):
+        print("Parent1.method")
+
+class Parent2:
+    def __init__(self):
+        self.name = "Parent2"
+
+    def method(self):
+        print("Parent2.method")
+
+class Child(Parent1, Parent2):
+    def __init__(self):
+        super().__init__()
