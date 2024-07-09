@@ -1,0 +1,96 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMdDnUV3A2xwkTRT9+PRh/T",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Whyoblomovisme/barname-nevisi/blob/main/Circle%202copy_of_untitled5.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "OFQSfNtApWFd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#کلاس دایره :\n",
+        "\n",
+        "import math\n",
+        "class circle():\n",
+        "    pi=math.pi\n",
+        "    def __init__ (self, r=5):\n",
+        "        self.rad = r\n",
+        "        print(\"circle created\")\n",
+        "    def perim(self):\n",
+        "        return 2*pi*self.rad\n",
+        "    def Area(self):\n",
+        "        return p*r*r\n",
+        "    def _zdel (self):\n",
+        "        print(\"circle deleted\")\n",
+        "        return -1\n",
+        "K = circle(10)\n",
+        "print(K.Area)\n",
+        "print(K.perim)\n",
+        "print(K.pi)\n",
+        "del K\n",
+        "#circle created\n",
+        "#314\n",
+        "#62.8\n",
+        "#3.14\n",
+        "#circle deleted"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-H0f9o_XVWeY",
+        "outputId": "6dfed650-604e-440f-ecc5-0759aab09bee"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "circle created\n",
+            "<bound method circle.Area of <__main__.circle object at 0x78b76277cca0>>\n",
+            "<bound method circle.perim of <__main__.circle object at 0x78b76277cca0>>\n",
+            "3.141592653589793\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "IwC5EzUQWAyy"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
