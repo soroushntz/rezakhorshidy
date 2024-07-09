@@ -1,0 +1,22 @@
+
+
+from typing import TypeVar, List
+
+T = TypeVar("T")
+
+def sum_list(numbers: List[T]) -> T:
+    total = numbers[0]
+
+    for num in numbers[1:]:
+        total += num
+
+    return total
+
+numbers = [1, 2, 3, 4, 5]
+floats = [1.1, 2.2, 3.3, 4.4, 5.5]
+
+total_numbers = sum_list(numbers)
+total_floats = sum_list(floats)
+
+print(f"Sum of numbers: {total_numbers}")
+print(f"Sum of floats: {total_floats}")
