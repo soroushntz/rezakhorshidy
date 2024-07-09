@@ -1,0 +1,9 @@
+
+
+string_len = len("Hello, world!")
+list_len = len([1, 2, 3, 4, 5])
+dict_len = len({"name": "John", "age": 30})
+
+print(f"String length: {string_len}")
+print(f"List length: {list_len}")
+print(f"Dictionary length: {dict_len}")
