@@ -1,0 +1,27 @@
+#برنامه ای بنوسید که ضرایب دو چند جمله ای را از رتبه 5 ورودی گرفته آنگاه حاصل جمع و حاصل تفریق این دو چند جمله ای را در خروجی نوشته 
+
+def add_polynomials(poly1, poly2):
+    result = [0] * 5
+    for i in range(5):
+        result[i] = poly1[i] + poly2[i]
+    return result
+
+def subtract_polynomials(poly1, poly2):
+    result = [0] * 5
+    for i in range(5):
+        result[i] = poly1[i] - poly2[i]
+    return result
+
+def print_polynomial(poly):
+    terms = []
+    for i in range(5):
+        if poly[i] != 0:
+            term = ""
+            if i == 0:
+                term += str(poly[i])
+            elif i == 1:
+                term += str(poly[i]) + "x"
+            else:
+                term += str(poly[i]) + "x^" + str(i)
+            terms.append(term)
+    return " + ".join(terms)
