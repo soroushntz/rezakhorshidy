@@ -1,0 +1,46 @@
+#تفاوت وارث multiple level و Multiple چیست؟ با مثال
+
+وراثت تک: یک کلاس فرزند از یک طبقه والدین ارث می# برد.
+ وراثت چندگانه: یک کلاس فرزند از بیش از یک کلاس والد ارث می برد.
+ وراثت چندسطحی: یک کلاس فرزند از یک کلاس والد ارث می برد که خود از کلاس والد دیگر ارث می برد. 
+
+#در برنامه نویسی شی گرا (OOP)، وراثت مکانیزمی است که در آن یک کلاس جدید (فرزند یا زیر کلاس) خصوصیات و رفتار یک کلاس موجود (والد یا سوپرکلاس) را به ارث می برد
+# در وراثت تک، یک کلاس فرزند تنها از یک کلاس والد ارث می برد.  این ساده ترین شکل ارث است.
+
+class Animal:
+    def sound(self):
+        print("The animal makes a sound.")
+
+class Dog(Animal):
+    def sound(self):
+        print("The dog barks.")
+#در این مثال، Dog یک کلاس کودک است که از Animal به ارث می‌برد.  Dog پیاده‌سازی خاص خود را از روش صدا دارد، که روشی را در Animal لغو می‌کند.
+
+#در وراثت چندگانه، یک کلاس فرزند از بیش از یک کلاس والد ارث می برد.  این به کلاس فرزند اجازه می دهد تا ویژگی ها و رفتار را از چندین منبع به ارث ببرد
+
+class Animal:
+    def sound(self):
+        print("The animal makes a sound.")
+
+class Mammal:
+    def feed_young(self):
+        print("The mammal feeds its young.")
+
+class Dog(Animal, Mammal):
+    def sound(self):
+        print("The dog barks.")
+#در این مثال، Dog یک کلاس کودک است که هم از Animal و هم از Mammal به ارث می برد.  سگ روش صدا را از Animal و روش feed_young را از Mammal به ارث می برد
+#در وراثت چندسطحی، یک کلاس فرزند از یک کلاس والد ارث می برد که خود از کلاس والد دیگر ارث می برد.  این یک سلسله مراتب وراثت ایجاد می کند.
+class Animal:
+    def sound(self):
+        print("The animal makes a sound.")
+
+class Mammal(Animal):
+    def feed_young(self):
+        print("The mammal feeds its young.")
+
+class Dog(Mammal):
+    def sound(self):
+        print("The dog barks.")
+
+#در این مثال، Dog یک کلاس کودک است که از Mammal ارث می برد، که خود از Animal ارث می برد.  سگ روش صدا را از Mammal به ارث می برد (که در Animal جایگزین می شود) و روش feed_young را از Mammal. 
