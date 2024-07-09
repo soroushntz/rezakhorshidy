@@ -1,0 +1,17 @@
+#کلاس دانجشو بنوسید ک داخل آن از متدد های سازنده، مخرب، String به کار رفته باشد در آن معدل، میانگین نمرات نمایش داده شود با زبان پاییتون
+
+class Student:
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+
+    def __del__(self):
+        print(f"Destroying student object for {self.name}")
+
+    def __str__(self):
+        return f"Student: {self.name}, GPA: {self.calculate_gpa():.2f}"
+
+    def calculate_gpa(self):
+        total_points = sum(self.grades.values())
+        total_credits = sum(self.grades.keys())
+        return total_points / total_credits
