@@ -1,0 +1,9 @@
+
+
+class student:
+    def __init__(self,id=1111,name='reza'):
+          self.id=id
+          self.name=name
+    def __del__(self):
+          print(self.name,'deleted')
+     
