@@ -1,0 +1,24 @@
+class University:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print(f"University: {self.name}")
+
+class Department(University):
+    def __init__(self, name, university):
+        super().__init__(university)
+        self.name = name
+
+    def display(self):
+        super().display()
+        print(f"Department: {self.name}")
+
+class Course(Department):
+    def __init__(self, name, department):
+        super().__init__(department, department.name)
+        self.name = name
+
+    def display(self):
+        super().display()
+        print(f"Course: {self.name}")
