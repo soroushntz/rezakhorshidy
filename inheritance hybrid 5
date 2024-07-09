@@ -1,0 +1,19 @@
+# Parent class 1
+class Flyer:
+    def fly(self):
+        print("The flyer flies")
+
+# Parent class 2
+class Walker:
+    def walk(self):
+        print("The walker walks")
+
+# Child class 1
+class Bird(Flyer, Walker):
+    def chirp(self):
+        print("The bird chirps")
+
+# Child class 2
+class Parrot(Bird):
+    def talk(self):
+        print("The parrot talks")
