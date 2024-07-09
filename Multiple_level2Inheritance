@@ -1,0 +1,11 @@
+class Vehicle:
+    def move(self):
+        print("The vehicle moves.")
+
+class Car(Vehicle):
+    def honk(self):
+        print("The car honks its horn.")
+
+class ElectricCar(Car):
+    def charge(self):
+        print("The electric car charges its battery.")
