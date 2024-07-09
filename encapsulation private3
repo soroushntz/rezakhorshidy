@@ -1,0 +1,16 @@
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+
+    def set_width(self, width):
+        if width > 0:
+            self.__width = width
+        else:
+            raise ValueError("Width must be positive")
+
+    def get_width(self):
+        return self.__width
+
+    def area(self):
+        return self.__width * self.__height
