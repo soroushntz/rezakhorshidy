@@ -1,0 +1,16 @@
+
+class Animal:
+    def sound(self):
+        print("The animal makes a sound")
+
+class Mammal(Animal):
+    def eat(self):
+        print("The mammal eats")
+
+class Flyer:
+    def fly(self):
+        print("The flyer flies")
+
+class Bat(Mammal, Flyer):
+    def use_sonar(self):
+        print("The bat uses sonar")
