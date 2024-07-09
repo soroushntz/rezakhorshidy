@@ -1,0 +1,11 @@
+class Shape:
+    def area(self):
+        print("The shape has an area.")
+
+class Rectangle(Shape):
+    def perimeter(self):
+        print("The rectangle has a perimeter.")
+
+class Square(Rectangle):
+    def diagonal(self):
+        print("The square has a diagonal.")
