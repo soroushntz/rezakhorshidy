@@ -1,0 +1,19 @@
+
+
+
+class A:
+    name='Ali'
+    age=25
+A.name='reza'
+print (A.name)
+test=A()
+test. name='Ahmad'
+     
+reza
+
+print(test.age)
+print(getattr(A,'name','hassan' ))
+setattr(A, 'name', 'hassan')
+     
+25
+reza
