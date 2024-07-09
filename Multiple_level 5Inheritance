@@ -1,0 +1,11 @@
+class Food:
+    def eat(self):
+        print("The food is eaten.")
+
+class Fruit(Food):
+    def grow(self):
+        print("The fruit grows on a tree.")
+
+class Apple(Fruit):
+    def ripen(self):
+        print("The apple ripens on the tree.")
