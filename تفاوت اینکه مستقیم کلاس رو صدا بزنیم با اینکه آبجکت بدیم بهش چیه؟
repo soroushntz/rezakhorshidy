@@ -1,0 +1,18 @@
+#تفاوت اینکه مستقیم کلاس رو صدا بزنیم با اینکه آبجکت بدیم بهش چیه؟ با مثال 
+
+#هنگامی که ما یک کلاس را مستقیماً صدا می کنیم در اصل سازنده کلاس را فراخوانی می کنیم که نمونه جدیدی از کلاس را برمیگرداونه. این به عنوان نمونه سازی کلاس شناخته می شود از طرف دیگر، وقتی به یک کلاس یک شی می دهید، یک مرجع به یک نمونه موجود از کلاس ایجاد می کنید.
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}!")
+
+# Calling the class directly (instantiating a new object)
+my_obj1 = MyClass("Alice")
+my_obj1.greet()  
+
+# Giving the class an object (creating a reference to an existing object)
+my_obj2 = my_obj1
+my_obj2.greet()  
