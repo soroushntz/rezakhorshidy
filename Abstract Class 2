@@ -1,0 +1,13 @@
+from abc import ABC, abstractmethod
+
+class Abstraction(ABC):
+    @abstractmethod
+    def do_something(self):
+        pass
+
+class ConcreteClass(Abstraction):
+    def do_something(self):
+        print("Doing something in ConcreteClass")
+
+obj = ConcreteClass()
+obj.do_something()
