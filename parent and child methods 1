@@ -1,0 +1,33 @@
+#نحوه استفاده از متدها و متغیر های والد و فرزند را با مثال مشخص کنید.
+
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sound(self):
+        print("The animal makes a sound.")
+
+    def eat(self):
+        print("The animal is eating.")
+
+class Dog(Animal):
+    def __init__(self, name, age, breed):
+        super().__init__(name, age)  # Calls the parent's __init__ method
+        self.breed = breed
+
+    def sound(self):
+        print("The dog barks.")  # Overrides the parent's sound method
+
+    def fetch(self):
+        print("The dog is fetching.")
+
+my_dog = Dog("Fido", 3, "Golden Retriever")
+
+my_dog.sound()  
+my_dog.eat()   
+my_dog.fetch()  
+
+print(my_dog.name)  
+print(my_dog.age) 
+print(my_dog.breed)  
