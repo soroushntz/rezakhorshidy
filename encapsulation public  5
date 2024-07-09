@@ -1,0 +1,9 @@
+class Student:
+    def __init__(self, grades):
+        self._grades = grades
+
+    def get_grade(self, subject):
+        return self._grades.get(subject)
+
+    def set_grade(self, subject, grade):
+        self._grades[subject] = grade
